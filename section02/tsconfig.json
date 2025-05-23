@@ -1,0 +1,11 @@
+{
+  "include": ["src"],
+  "compilerOptions": {
+    "target": "ESNext", // 변환되는 자바스크립트가 사용할 버전 명시
+    "module": "ESNext", // 변환되는 자바스크립트가 사용할 모듈 시스템 명시
+    "outDir": "dist", // 변환되는 자바스크립트가 생성될 폴더
+    "strict": true, // 엄격하게 타입 검사를 할 것인가?
+    "moduleDetection": "force", // 젼역 모듈 -> 개별 모듈로 변환
+    "skipLibCheck": true // 타입 정의 파일의 타입 검사 생략
+  }
+}

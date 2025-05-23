@@ -1,0 +1,22 @@
+{
+  "name": "section02",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parkminjo/one-bite-typescript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/parkminjo/one-bite-typescript/issues"
+  },
+  "homepage": "https://github.com/parkminjo/one-bite-typescript#readme",
+  "description": "",
+  "dependencies": {
+    "@types/node": "^22.15.21"
+  }
+}
