@@ -45,3 +45,21 @@ function voidExam() {
 
   let voidVar: void = undefined;
 }
+
+// any
+// 타입 계층도를 무시함
+// 모든 타입의 슈퍼 타입이자 서브 타입으로 위치할 수 있음
+function anyExam() {
+  let unknownVar: unknown;
+  let anyVar: any;
+  let undefinedVar: undefined;
+  let neverVar: never;
+
+  // 다운 캐스팅의 상황인데도 any 타입일 때는 허용됨
+  // 위험한 타입이기 때문에 사용하는 것을 지양할 필요가 있음
+  anyVar = unknownVar;
+  undefinedVar = anyVar;
+
+  // never 타입에는 어떤 값도 할당할 수 없기 때문에 any 타입도 할당할 수 없음
+  // neverVar = anyVar;
+}
