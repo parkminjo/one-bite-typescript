@@ -35,3 +35,13 @@ function neverExam() {
   // let never2: never = 'a';
   // let never3: never = true;
 }
+
+// void
+function voidExam() {
+  function voidFunc(): void {
+    console.log('Hello');
+    return undefined;
+  }
+
+  let voidVar: void = undefined;
+}
