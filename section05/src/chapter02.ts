@@ -1,3 +1,5 @@
+// interface 학장
+// extends
 interface Animal {
   name: string;
   age: number;
@@ -16,6 +18,7 @@ interface Chicken extends Animal {
   isFly: boolean;
 }
 
+// 다중 확장
 interface DogCat extends Dog, Cat {}
 
 const dogCat: DogCat = {
