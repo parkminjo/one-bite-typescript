@@ -27,7 +27,7 @@ function App() {
       <h1>Todo</h1>
       <Editor addTodo={addTodo} />
       {todos.map((todo) => {
-        return <TodoItem key={todo.id} {...todo} deleteTodo={deleteTodo} />;
+        return <TodoItem key={todo.id} {...todo} onClick={deleteTodo} />;
       })}
     </div>
   );
