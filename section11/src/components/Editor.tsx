@@ -1,18 +1,16 @@
 import { useState } from 'react';
+import { useTodoDispatch } from '../hooks/use-todo-dispatch';
 
-interface EditorProps {
-  addTodo: (text: string) => void;
-}
-
-const Editor = ({ addTodo }: EditorProps) => {
+const Editor = () => {
   const [text, setText] = useState('');
+  const dispatch = useTodoDispatch();
 
   const onChangeInput = (event: React.ChangeEvent<HTMLInputElement>) => {
     setText(event.target.value);
   };
 
   const onClickButton = () => {
-    addTodo(text);
+    dispatch.addTodo(text);
     setText('');
   };
 
